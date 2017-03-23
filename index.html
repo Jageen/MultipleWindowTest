@@ -2,19 +2,20 @@
 <html>
 <body>
 
-<p>Open new tab about:blank</p>
-
-<button onclick="myFunction()">click me!</button>
-
 <script>
 function myFunction() {
     
-    for(int i=0; i<10; i++){
-        var win = window.open('about:blank','windowname','width=1,height=1,left=5,top=3');
-        setTimeout(function() { win.close();}, 3000);   
+    for (i = 0; i<100; i++) {
+//    var win = window.open('about:blank','windowname','width=1,height=1,left=5,top=3');
+        var win = window.open('about:blank');
+        setTimeout(function() { win.close();}, 3000);
     }
 }
 </script>
+    
+<p>Open new tab about:blank</p>
+
+<button onclick="myFunction()">click me!</button>
 
 </body>
 </html>
